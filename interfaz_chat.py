@@ -51,7 +51,7 @@ def iniciar_chat(agente_ia):
     ANCHO_VENTANA = 1200 # Ventana ancha para que quepan ambas secciones cómodamente
     ALTO_VENTANA = 650
     ventana = pygame.display.set_mode((ANCHO_VENTANA, ALTO_VENTANA))
-    pygame.display.set_caption("Consola de Control de Aprendizaje por Refuerzo — Confecciones Santa Rosa")
+    pygame.display.set_caption("Consola de Control de Aprendizaje por Refuerzo")
 
     # --- Carga de Recursos Visuales ---
     ruta_imagen = "Gemini_Generated_Image_j5qrunj5qrunj5qr.png"
@@ -190,7 +190,7 @@ def iniciar_chat(agente_ia):
         rect_cabecera = pygame.Rect(0, 0, 600, 65)
         pygame.draw.rect(ventana, COLOR_CARRITO_INPUT, rect_cabecera)
         pygame.draw.line(ventana, BORDES, (0, 65), (600, 65), 1)
-        texto_cabecera = fuente_cabecera.render("Consola de Control — Taller del Futuro", True, NEGRO_TEXTO)
+        texto_cabecera = fuente_cabecera.render("Consola de Control", True, NEGRO_TEXTO)
         ventana.blit(texto_cabecera, (25, 20))
 
         # Burbujas de Conversación
@@ -260,7 +260,7 @@ def iniciar_chat(agente_ia):
         ventana.blit(titulo_cerebro, (630, 20))
 
         # Subtítulos con los parámetros clave del modelo matemático
-        txt_estados = fuente_tabla.render("Estados (Intenciones): S0=Saludo, S1=Precio, S2=Diseño, S3=Pedido, S4=Desconocido", True, NEGRO_TEXTO)
+        txt_estados = fuente_tabla.render("Estados (Intenciones): S0=Inicialización del Sistema, S1=Optimización y Corte IA, S2=Calibración de Pantallas, S3=Reporte e Inventario, S4=Desconocido", True, NEGRO_TEXTO)
         txt_parametros = fuente_tabla.render("Epsilon (ε): 0.2 (20% exploración)  |  Tasa de Aprendizaje (α): 0.5", True, (116, 125, 140))
         ventana.blit(txt_estados, (630, 60))
         ventana.blit(txt_parametros, (630, 85))
