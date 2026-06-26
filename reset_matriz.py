@@ -1,7 +1,6 @@
 import os
 
 def limpiar_progreso():
-    # Dejamos únicamente el archivo de la matriz Q que necesitas resetear
     archivo_a_borrar = 'matriz_q_local.json'
     
     if os.path.exists(archivo_a_borrar):

@@ -162,7 +162,7 @@ def iniciar_chat(agente_ia):
                         mensajes.append(("Bot", respuesta_bot))
                         text_input = ""
                 else:
-                    if len(text_input) < 35:  
+                    if len(text_input) < 60:  
                         text_input += evento.unicode
 
         ventana.fill((255, 255, 255))
